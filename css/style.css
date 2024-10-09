@@ -1,0 +1,47 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(64, 33, 93);
+}
+
+h1 {
+    text-align: center;
+}
+
+.letter-container, .guess-container, .game-info, .restart-container {
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    font-size: 20px;
+}
+
+button {
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: darkorange;
+    color: white;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+#message {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#remaining-turns, #previous-guesses {
+    font-size: 16px;
+}

@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Letter Game</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="./js/app.js" defer></script>
 </head>
+
 <body>
-    
+  <h1>Guess The Letter Game</h1>
+
+  <section class="letter-container">
+    <p id="Letter"></p>
+  </section>
+
+  <section class="guess-container">
+    <input type="text" id="guess-input" placeholder="Enter your guess" maxlength="1">
+    <button id="check-btn">Check</button>
+  </section>
+
+  <section class="game-info">
+    <p id="message"></p>
+    <p id="remaining-turns">Turns left: 10</p>
+    <p id="previous-guesses">Previous guesses: </p>
+  </section>
+
+  <section class="restart-container">
+    <button id="restart-btn">Restart Game</button>
+  </section>
 </body>
 </html>
