@@ -25,7 +25,7 @@ function initGame() {
 }
 
 function updateGameDisplay() {
-    remainingTurnsDisplay.textContent = `Turns left: ${turnsLeft}`;
+    remainingTurnsDisplay.textContent = `You have: ${turnsLeft}`;
     previousGuessesDisplay.textContent = `Previous guesses: ${guesses.join(', ')}`;
 }
 
@@ -49,7 +49,7 @@ function checkGuess() {
         messageDisplay.textContent = `You win! The letter was ${computerLetter}`;
         disableGame();
     } else if (turnsLeft === 0) {
-        messageDisplay.textContent = `gg ${computerLetter}`;
+        messageDisplay.textContent = `GG! TRY AGINE ${computerLetter}`;
         disableGame();
     } else {
         updateGameDisplay();
