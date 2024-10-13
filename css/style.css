@@ -5,7 +5,54 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: rgb(114, 138, 144);
   height: 300vh;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: xx-small;
+  height: 100px;
+}
+
+.letter-container, .guess-container, .game-info, .restart-container {
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 3px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(10, 10, 60);
+  color: white;
+}
+
+button:hover {
+  background-color: rgb(10, 10, 60);
+}
+
+#message {
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+#remaining-turns, #previous-guesses {
+  font-size: 16px;
+}
+
+body {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   height: 100vh;
   overflow: hidden;
@@ -368,47 +415,3 @@ body {
     transform: rotate(405deg);
   }
 }
-
-h1 {
-  text-align: center;
-}
-
-h2 {
-  text-align: center;
-  font-size: xx-small;
-  height: 100px;
-}
-
-.letter-container, .guess-container, .game-info, .restart-container {
-  margin-bottom: 2px;
-  text-align: center;
-}
-
-input {
-  padding: 5px;
-  font-size: 16px;
-}
-
-button {
-  padding: 3px 10px;
-  font-size: 20px;
-  cursor: pointer;
-  border: none;
-  border-radius: 10px;
-  background-color: rgb(10, 10, 60);
-  color: white;
-}
-
-button:hover {
-  background-color: rgb(10, 10, 60);
-}
-
-#message {
-  font-weight: bold;
-  margin-top: 50px;
-}
-
-#remaining-turns, #previous-guesses {
-  font-size: 16px;
-}
-
