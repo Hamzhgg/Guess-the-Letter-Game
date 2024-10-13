@@ -9,6 +9,13 @@ const remainingTurnsDisplay = document.getElementById('remaining-turns');
 const previousGuessesDisplay = document.getElementById('previous-guesses');
 const restartBtn = document.getElementById('restart-btn');
 const checkBtn = document.getElementById('check-btn');
+const alphabetButtons = document.querySelectorAll('.Alphabet-btn')
+
+alphabetButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        guessInput.value = this.textContent;
+    });
+});
 
 function generateRandomLetter() {
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -46,10 +53,10 @@ function checkGuess() {
     turnsLeft--;
 
     if (guess === computerLetter) {
-        messageDisplay.textContent = `You win! The letter was ${computerLetter}`;
+        messageDisplay.textContent = `YOU WIN! CONGERTS! ${computerLetter}`;
         disableGame();
     } else if (turnsLeft === 0) {
-        messageDisplay.textContent = `GG! TRY AGINE ${computerLetter}`;
+        messageDisplay.textContent = `GG TRY AGINE!!  THE LETTER WAS  ${computerLetter}`;
         disableGame();
     } else {
         updateGameDisplay();
