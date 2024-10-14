@@ -53,7 +53,7 @@ function checkGuess() {
     turnsLeft--;
 
     if (guess === computerLetter) {
-        messageDisplay.textContent = `YOU WIN! CONGERTS! ${computerLetter}`;
+        messageDisplay.textContent = `YOU WIN!! ${computerLetter}`;
         disableGame();
     } else if (turnsLeft === 0) {
         messageDisplay.textContent = `GG TRY AGINE!!  THE LETTER WAS  ${computerLetter}`;
